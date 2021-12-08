@@ -1,0 +1,48 @@
+.logoDiv {
+  margin-left: 120px;
+  margin-top: 32px;
+}
+
+.logoImg {
+  width: 120px;
+  height: 25px;
+}
+
+.header {
+  text-align: center;
+}
+
+.overlapGroup3 {
+  background-size: 100% 100%;
+}
+
+.bigTitle {
+  padding-top: 120px;
+  font-size: 46px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+
+.description {
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.searchContainer {
+  width: 621px;
+  height: 45px;
+  font-size: 15px;
+  line-height: 32px;
+  margin-top: 48px;
+  margin-bottom: 18.5px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box; 
+  border-radius: 5px;
+}
+
+.filter {
+  padding-bottom: 120px;
+}

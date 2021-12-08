@@ -1,6 +1,8 @@
+import Header from "../Header/Header";
+
 function HomeView() {
   return (
-    <div>Hello World!</div>
+    <Header/>
   );
 }
 

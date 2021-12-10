@@ -7,6 +7,7 @@
   box-sizing: border-box;
   border-radius: 5px;
   margin-right: 12px;
+  padding-left: 12px;
 }
 
 .countrySelector {
@@ -14,9 +15,11 @@
   height: 38px;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
   background: rgba(0, 0, 0, 0.0001);
   box-sizing: border-box;
   border-radius: 5px 0 0 5px;
+  padding-left: 12px;
 }
 
 .stateSelector {
@@ -24,9 +27,11 @@
   height: 38px;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
   background: rgba(0, 0, 0, 0.0001);
   box-sizing: border-box;
   border-radius: 0 5px 5px 0;
+  padding-left: 12px;
 }
 
 .selectorOption {

@@ -1,0 +1,84 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  min-height: 145px;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 2px rgba(5, 27, 43, 0.14);
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-left: 10%;
+}
+
+
+.leftCardInfo {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  margin-left: 100px;
+}
+
+.logo {
+  margin-right: 77px;
+  width: 95px;
+  height: 76px;
+}
+
+.info {
+  width: 60%;
+}
+
+
+.infoTitle {
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.infoAddress {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.rightCardInfo {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.contacts {
+  width: 40%;
+}
+
+.website {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.phone {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 32px;
+  color: #354556;
+}
+
+.shape {
+  width: 0;
+  height: 70px;
+  border: 1px solid #DCDEE0;
+}
+
+.status {
+  width: 40%;
+  margin-left: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.statusTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 32px;
+}

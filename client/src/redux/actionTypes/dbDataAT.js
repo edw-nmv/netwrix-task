@@ -2,6 +2,6 @@ const actionTypesDBData = {
   GET_DATA_FROM_DB_START: 'GET_DATA_FROM_DB_START',
   GET_DATA_FROM_DB_SUCCESS: 'GET_DATA_FROM_DB_SUCCESS',
   GET_DATA_FROM_DB_ERROR: 'GET_DATA_FROM_DB_ERROR',
-}
+};
 
 export default actionTypesDBData;

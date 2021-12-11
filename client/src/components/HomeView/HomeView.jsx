@@ -1,51 +1,35 @@
-import Card from "../Card/Card";
-import Header from "../Header/Header";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import actionTypesDBData from '../../redux/actionTypes/dbDataAT';
+
+import Card from '../Card/Card.jsx';
+import Header from '../Header/Header.jsx';
 
 function HomeView() {
+  const dispatch = useDispatch();
 
-  const info = [
-    {
-      id: 1,
-      title: 'Tango Technology',
-      address: 'Sydney, Level 7, 171 Clarence Street',
-      website: 'Website',
-      phone: '+61 2 8001 0250',
-      status: 'Distributor',
-    },
-    {
-      id: 2,
-      title: 'Blue Turtle Technologies',
-      address: 'Midrand, Block E, Midridge Office Estate, International Business Gateway, Cnr New Road & Sixth',
-      website: 'Website',
-      phone: '+39 0461 997 111',
-      status: 'Elite Partner',
-    },
-    {
-      id: 3,
-      title: 'Novus Insight (Connecticut Center for Advanced Technology)',
-      address: 'East Hartford, 222 Pitkin Street',
-      website: 'Website',
-      phone: '8605198496',
-      status: 'MSP Partner',
-    },
-    {
-      id: 4,
-      title: 'Soway Information&Technology (Shanghai) Co., LTD',
-      address: 'Room 606, No#20 Building, Qibao International, 8633 Lane, Zhongchun Road, Minhang District Shanghai, China',
-      website: 'Website',
-      phone: '+86 21 6031 7626',
-      status: 'Preferred Partner',
-    },
-  ]
+  useEffect(() => {
+    dispatch({ type: actionTypesDBData.GET_DATA_FROM_DB_START });
+  }, [dispatch]);
+
+  const dataFromDB = useSelector((state) => state.data.list);
+  const companyType = useSelector((state) => state.companyType.list);
+  const companyByType = dataFromDB.filter((company) => company.status === companyType);
 
   return (
     <>
       <Header />
-        {info.map((company) => {
-          return (
-            <Card key={company.id} item={company} />
-          )
-        })}
+        {
+          !companyByType.length
+            ? <div style={{ textAlign: 'center' }}>
+              <p style={{ fontSize: 20 }}>
+                Your search parameters did not match any partners. Please try different search
+              </p>
+            </div>
+            : companyByType.map((company) => (
+              <Card key={company.id} item={company} />
+            ))
+        }
     </>
   );
 }

@@ -14,14 +14,14 @@ async function fetchData({
   return data;
 }
 
-function* fetchDataFromDB(action) {
+function* fetchDataFromDB() {
   try {
     const data = yield call(fetchData, {
-      url: 'http://localhost:5001/data'
+      url: 'http://localhost:5001/',
     });
-    yield put({type: actionTypesDBData.GET_DATA_FROM_DB_SUCCESS, payload: data})
+    yield put({ type: actionTypesDBData.GET_DATA_FROM_DB_SUCCESS, payload: data });
   } catch (error) {
-    yield put({type: actionTypesDBData.GET_DATA_FROM_DB_ERROR, payload: error})
+    yield put({ type: actionTypesDBData.GET_DATA_FROM_DB_ERROR, payload: error });
   }
 }
 

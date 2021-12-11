@@ -17,14 +17,12 @@ router.get('/', (req, res) => {
       console.log("Can not connect to the DB" + err);
     }
     client.query('SELECT * FROM partner_locator', function (err, data) {
-          done();
-          if (err) {
-            console.log(err)
-            return next(err);
-          }
-          console.log(data)
-          res.json(data);
-        })
+      done();
+      if (err) {
+        return next(err);
+      }
+      res.json(data.rows);
+    })
   })
 })
 

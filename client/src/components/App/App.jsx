@@ -1,9 +1,9 @@
-import HomeView from '../HomeView/HomeView';
+import HomeView from '../HomeView/HomeView.jsx';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div class="App">
       <HomeView/>
     </div>
   );

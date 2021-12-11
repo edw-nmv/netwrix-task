@@ -1,7 +1,8 @@
 import * as React from 'react';
-import SelectArea from '../SelectArea/SelectArea.jsx'
-import logo from './img/Netwrix_logo_120x25.png'
-import background from './img/bg_large_1.png'
+
+import SelectArea from '../SelectArea/SelectArea.jsx';
+import logo from './img/Netwrix_logo_120x25.png';
+import background from './img/bg_large_1.png';
 import styles from './Header.module.css';
 
 function Header() {
@@ -10,8 +11,8 @@ function Header() {
     <div className={styles.logoDiv}>
       <img className={styles.logoImg} src={logo} alt="logo" />
     </div>
-    <div className={styles.header} style={{ backgroundImage: `url(${background})`}}>
-      <div classNmae={styles.overlapGroup3}>
+    <div className={styles.header} style={{ backgroundImage: `url(${background})` }}>
+      <div className={styles.overlapGroup3}>
         <h1 className={styles.bigTitle}>Netwrix Partner Locator</h1>
         <p className={styles.description}>
           Hundreds of Netwrix partners around the world are standing by to help you.<br/>

@@ -27,15 +27,15 @@ function SelectLabels() {
       </select>
       <select name="type" placeholder="type" className={styles.countrySelector} defaultValue={'DEFAULT'}>
         <option value="DEFAULT" disabled style={{ display: 'none' }} className={styles.selectorOption}>Country</option>
-        <option value="option">Country 1</option>
-        <option value="option">Country 2</option>
-        <option value="option">Country 3</option>
+        <option value="option">United States</option>
+        <option value="option">United Kingdom</option>
+        <option value="option">Russia</option>
       </select>
       <select name="type" placeholder="type" className={styles.stateSelector} defaultValue={'DEFAULT'}>
         <option value="DEFAULT" disabled style={{ display: 'none' }} className={styles.selectorOption}>State</option>
-        <option value="option">State 1</option>
-        <option value="option">State 2</option>
-        <option value="option">State 3</option>
+        <option value="option">State of New York</option>
+        <option value="option">State of Washington</option>
+        <option value="option">State of Florida</option>
       </select>
     </div>
   );

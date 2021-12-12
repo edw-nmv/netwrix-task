@@ -11,7 +11,7 @@ function Header() {
     <div className={styles.logoDiv}>
       <img className={styles.logoImg} src={logo} alt="logo" />
     </div>
-    <div className={styles.header} style={{ backgroundImage: `url(${background})` }}>
+    <div className={styles.header} style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat' }}>
       <div className={styles.overlapGroup3}>
         <h1 className={styles.bigTitle}>Netwrix Partner Locator</h1>
         <p className={styles.description}>

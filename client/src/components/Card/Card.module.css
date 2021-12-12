@@ -15,12 +15,12 @@
 .leftCardInfo {
   display: flex;
   align-items: center;
-  width: 600px;
-  margin-left: 100px;
+  width: 60%;
+  margin-left: 7%;
 }
 
 .logo {
-  margin-right: 77px;
+  margin-right: 15%;
   width: 95px;
   height: 76px;
 }
@@ -43,8 +43,8 @@
 .rightCardInfo {
   display: flex;
   align-items: center;
-  width: 400px;
-  margin-left: 100px;
+  width: 40%;
+  margin-left: 7%;
 }
 
 .contacts {
@@ -59,19 +59,24 @@
 .phone {
   text-decoration: none;
   font-size: 13px;
-  line-height: 32px;
+  /* line-height: 32px; */
   color: #354556;
 }
 
-.shape {
+.shapeVertical {
   width: 0;
   height: 70px;
   border: 1px solid #DCDEE0;
 }
 
+.shapeHorizontal {
+  display: none;
+}
+
 .status {
   width: 40%;
-  margin-left: 48px;
+  margin-left: 10%;
+  margin-right: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -81,4 +86,98 @@
   font-weight: 600;
   font-size: 13px;
   line-height: 32px;
+}
+
+.helper {
+  visibility: hidden;
+}
+
+
+@media (max-width: 767px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 288px;
+    margin: 20px auto;
+    padding: 0;
+  }
+
+  .leftCardInfo {
+    width: 288px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .logo {
+    margin: 0;
+    padding-top: 43px;
+    padding-left: 24px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .infoTitle {
+    margin-top: 40px;
+    margin-left: 24px;
+  }
+
+  .infoAddress {
+    max-width: 80%;
+    margin-top: 13px;
+    margin-left: 24px;
+  }
+
+  .rightCardInfo {
+    width: 288px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .contacts {
+    width: 100%;
+    margin-top: 28px;
+  }
+
+  .contacts p {
+    margin: 0;
+  }
+
+  .website {
+    width: 240px;
+    margin-top: 24px;
+    margin-left: 24px;
+  }
+  
+  .phone {
+    margin-left: 24px;
+    margin-bottom: 0;
+  }
+
+  .shapeVertical {
+    display: none;
+  }
+
+  .shapeHorizontal {
+    display: block;
+    border: 1px solid #DCDEE0;
+    width: 240px;
+    margin-top: 32px;
+  }
+
+  .status {
+    width: 100%;
+    margin-left: 24px;
+    margin-bottom: 33px;
+  }
+
+  .statusTitle {
+    margin: 0;
+  }
+
+  .helper {
+    display: none;
+  }
 }

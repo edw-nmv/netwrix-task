@@ -11,9 +11,10 @@ function Header() {
     <div className={styles.logoDiv}>
       <img className={styles.logoImg} src={logo} alt="logo" />
     </div>
-    <div className={styles.header} style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat' }}>
+    <div className={styles.header} style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
       <div className={styles.overlapGroup3}>
         <h1 className={styles.bigTitle}>Netwrix Partner Locator</h1>
+        <h1 className={styles.bigTitleMobile}>Netwrix<br/> Partner Locator</h1>
         <p className={styles.description}>
           Hundreds of Netwrix partners around the world are standing by to help you.<br/>
           With our Partner Locator you can easily find the list of authorized partners in your area.

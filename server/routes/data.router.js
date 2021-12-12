@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
     if (err) {
       console.log("Can not connect to the DB" + err);
     }
-    client.query('SELECT * FROM partner_locator', function (err, data) {
+    client.query('SELECT * FROM partner_locators', function (err, data) {
       done();
       if (err) {
         return next(err);

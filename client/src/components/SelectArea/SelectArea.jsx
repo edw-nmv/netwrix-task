@@ -16,7 +16,7 @@ function SelectLabels() {
   }
 
   return (
-    <div>
+    <div className={styles.selectors}>
       <select name="type" placeholder="type" className={styles.typeSelector} defaultValue={'DEFAULT'} onChange={handleChange}>
         <option value="DEFAULT" disabled style={{ display: 'none' }} className={styles.selectorOption}>Type</option>
         {

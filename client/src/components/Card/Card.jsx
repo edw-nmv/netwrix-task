@@ -13,14 +13,15 @@ function Card({ item }) {
         </div>
       </div>
       <div className={styles.rightCardInfo}>
+        <hr className={styles.shapeHorizontal} noshade={'noshade'}/>
         <div className={styles.contacts}>
           <p><a className={styles.website} href={item.website}>Website</a></p>
           <p><a className={styles.phone} href="tel:">{item.phone}</a></p>
         </div>
-        <hr className={styles.shape} noshade={'noshade'}/>
+        <hr className={styles.shapeVertical} noshade={'noshade'}/>
         <div className={styles.status}>
           <p className={styles.statusTitle}>{item.status}</p>
-          <p style={{ visibility: 'hidden' }}>helper</p>
+          <p className={styles.helper}>helper</p>
         </div>
       </div>
     </div>

@@ -37,3 +37,31 @@
 .selectorOption {
   font-size: 13px;
 }
+
+@media (max-width: 767px) {
+  .selectors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .typeSelector {
+    width: 288px;
+    margin: 4px 0;
+  }
+
+  .countrySelector {
+    width: 288px;
+    border-right: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin: 4px 0;
+  }
+
+  .stateSelector {
+    width: 288px;
+    border-left: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin: 4px 0;
+  }
+
+}
